@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mvi.MainActivity">
+    tools:context="com.example.mvi.workmanager.MainActivity">
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/player_View"
@@ -20,4 +20,5 @@
         android:layout_height="wrap_content"
         android:text="Play"
         app:layout_constraintTop_toBottomOf="@id/player_View"></Button>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

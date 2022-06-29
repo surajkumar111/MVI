@@ -1,9 +1,24 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
+
+def releaseFile= rootProject.file('release_keystore.properties')
+def releaseProperties = new Properties()
+releaseProperties.load(new FileInputStream(releaseFile))
+
 android {
+    signingConfigs {
+        release {
+            storeFile file(releaseProperties['storeFile'])
+            storePassword releaseProperties['storePassword']
+            keyPassword releaseProperties['keyPassword']
+            keyAlias releaseProperties['keyAlias']
+        }
+    }
     compileSdk 32
 
     defaultConfig {
@@ -23,7 +38,14 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -46,6 +68,23 @@ android {
     buildFeatures{
         viewBinding true
     }
+
+    flavorDimensions "appType"
+
+    productFlavors {
+        full {
+            dimension "appType"
+            applicationIdSuffix ".full"
+        }
+        half {
+            dimension "appType"
+            applicationIdSuffix ".half"
+        }
+        lite {
+            dimension "appType"
+            applicationIdSuffix ".lite"
+        }
+    }
 }
 
 dependencies {
@@ -67,4 +106,10 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
+    def work_version = "2.7.1"
+    // Kotlin + coroutines
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+    implementation "androidx.activity:activity-ktx:1.2.0-alpha04"
 }

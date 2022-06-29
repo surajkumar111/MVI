@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MVI Architecture </string>
+    <string name="app_name">Main MVI </string>
     <string name="title_activity_swiggy_checkout">SwiggyCheckout</string>
 </resources>
