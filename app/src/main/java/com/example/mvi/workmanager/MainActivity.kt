@@ -14,16 +14,15 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationManagerCompat
-import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import androidx.work.*
 import com.example.mvi.broadcastReceiver.AlarmBroadCastReceiver
 import com.example.mvi.LocationWorkManager
 import com.example.mvi.databinding.ActivityMainBinding
-import com.example.mvi.mvi.MainIntent
-import com.example.mvi.mvi.MainState
-import com.example.mvi.mvi.MainViewModel
+import com.example.mvi.mvi.*
 import com.example.mvi.services.ForegroundNotificationsReader
 import com.example.mvi.services.ServiceJob
 import com.google.android.exoplayer2.ExoPlayer
@@ -31,21 +30,30 @@ import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.source.MediaSource
 import com.google.android.exoplayer2.source.ProgressiveMediaSource
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSource
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
+import org.orbitmvi.orbit.viewmodel.observe
 import java.util.concurrent.TimeUnit
+import javax.inject.Inject
 
 
-class MainActivity : AppCompatActivity() {
+@AndroidEntryPoint
+class MainActivity : AppCompatActivity(), MVIInterface<MainState, MainSideEffect> {
 
     lateinit var binding: ActivityMainBinding
     private lateinit var exoPlayer: ExoPlayer
     private lateinit var mainViewModel: MainViewModel
+
+    @Inject
+
+    lateinit var name: String
     private val requestPermission =
         registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { isGranted ->
             //     createWorkRequest()
             //   setupJobService()
 
         }
+    val viewModel: MainViewModel by viewModels()
 
     private fun createWorkRequest() {
         val workRequest =
@@ -59,18 +67,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.playButton.setOnClickListener {
-            CoroutineScope(Dispatchers.IO).launch {
-                mainViewModel.mainIntent.send(MainIntent.PlayVideo)
-            }
+            mainViewModel.handleUserActions(MainIntent.PlayVideo)
         }
-        mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        mainViewModel.setupIntentObserver()
-
+        //mainViewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        // viewModel.observe(this, ::handleState, ::handleSideEffect)
         requestPermission()
         requestNotificationListenerPermission()
         setupNotificationListenerService()
-
-
     }
 
     private fun requestNotificationListenerPermission() {
@@ -118,20 +121,6 @@ class MainActivity : AppCompatActivity() {
         jobScheduler.schedule(jobInfo)
     }
 
-    private fun setupObserveState() {
-        CoroutineScope(Dispatchers.IO).launch {
-            mainViewModel.mainState.collect {
-                when (it) {
-                    MainState.Initial -> Unit
-                    MainState.Loading -> Unit
-                    MainState.Paused -> exoPlayer.pause()
-                    MainState.Playing -> withContext(Dispatchers.Main) { exoPlayer.play() }
-                    MainState.VideoLoaded -> Unit
-                }
-            }
-        }
-
-    }
 
     override fun onStart() {
         initializePlayer()
@@ -180,5 +169,35 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return false
+    }
+
+    override fun handleState(state: MainState) {
+        lifecycleScope.launch {
+            mainViewModel.stateFlow().collect {
+                when (it) {
+                    MainState.Initial -> TODO()
+                    MainState.Loading -> TODO()
+                    MainState.Paused -> TODO()
+                    MainState.Playing -> TODO()
+                    MainState.VideoLoaded -> TODO()
+                }
+            }
+        }
+    }
+
+    override fun handleSideEffect(effect: MainSideEffect) {
+        lifecycleScope.launch {
+            mainViewModel.sideFlow().collect { sideEffect ->
+                when (sideEffect) {
+                    is MainSideEffect.Toast -> {
+                        Toast.makeText(
+                            this@MainActivity,
+                            sideEffect.text,
+                            Toast.LENGTH_LONG
+                        ).show()
+                    }
+                }
+            }
+        }
     }
 }

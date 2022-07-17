@@ -10,23 +10,27 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.consumeAsFlow
 import kotlinx.coroutines.launch
+import org.orbitmvi.orbit.syntax.simple.intent
+import org.orbitmvi.orbit.syntax.simple.postSideEffect
+import org.orbitmvi.orbit.syntax.simple.reduce
 
-class MainViewModel : ViewModel() {
+class MainViewModel : BaseModel<MainState, MainSideEffect>(){
 
-    private val _mainState = MutableStateFlow<MainState>(MainState.Initial)
-    val mainState: StateFlow<MainState> get() = _mainState
-
-    val mainIntent = Channel<MainIntent>(Channel.UNLIMITED)
-
-    fun setupIntentObserver() {
-        CoroutineScope(Dispatchers.IO).launch {
-            mainIntent.consumeAsFlow().collect {
-                when (it) {
-                    MainIntent.PauseVideo -> _mainState.value = MainState.Paused
-                    MainIntent.PlayVideo -> _mainState.value = MainState.Playing
+    fun handleUserActions(action: MainIntent) {
+        when (action) {
+            MainIntent.PauseVideo -> intent {
+                postSideEffect(MainSideEffect.Toast("Paused"))
+                reduce {
+                    state.apply {
+                        copy(
+                            state = MainState.Playing
+                        )
+                    }
                 }
             }
+            MainIntent.PlayVideo -> intent {
+                postSideEffect(MainSideEffect.Toast("Playing"))
+            }
         }
-
     }
 }
