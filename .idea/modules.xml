@@ -7,6 +7,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.unitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.main.iml" />

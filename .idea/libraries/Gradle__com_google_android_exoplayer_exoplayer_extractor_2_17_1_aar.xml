@@ -1,12 +1,19 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.17.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1a96b4d4f217b211dec944d53544052e/transformed/exoplayer-extractor-2.17.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/59edfaf136f09213a6255a26f8fa3484/transformed/exoplayer-extractor-2.17.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1a96b4d4f217b211dec944d53544052e/transformed/exoplayer-extractor-2.17.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a96b4d4f217b211dec944d53544052e/transformed/exoplayer-extractor-2.17.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1a96b4d4f217b211dec944d53544052e/transformed/exoplayer-extractor-2.17.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9f45c1056ff9cae6d96957df39df6d4f/transformed/exoplayer-extractor-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6f06eff43a5fa1dd7ff13958691e65d7/transformed/exoplayer-extractor-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/58a4e59f51d86aed939d259f401f6b8f/transformed/exoplayer-extractor-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c8c485f928cb125825fa5d63a9d81a01/transformed/exoplayer-extractor-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b9942b24b6133358fdd9d761b84413d6/transformed/exoplayer-extractor-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cc537fe315b584244a9f165ec210e20d/transformed/exoplayer-extractor-2.17.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/59edfaf136f09213a6255a26f8fa3484/transformed/exoplayer-extractor-2.17.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59edfaf136f09213a6255a26f8fa3484/transformed/exoplayer-extractor-2.17.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/59edfaf136f09213a6255a26f8fa3484/transformed/exoplayer-extractor-2.17.1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

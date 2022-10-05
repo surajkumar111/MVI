@@ -1,12 +1,19 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-rtsp:2.17.1@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5a54ae50cdc7ccfdb0aebbb708f8989e/transformed/exoplayer-rtsp-2.17.1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c37622cf8c508df639e797aed3fec93f/transformed/exoplayer-rtsp-2.17.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5a54ae50cdc7ccfdb0aebbb708f8989e/transformed/exoplayer-rtsp-2.17.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5a54ae50cdc7ccfdb0aebbb708f8989e/transformed/exoplayer-rtsp-2.17.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5a54ae50cdc7ccfdb0aebbb708f8989e/transformed/exoplayer-rtsp-2.17.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca4aa2ee915bf562909ee7846fc36113/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c31ef927785a4296389f60c06af14349/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e623db22471f62662f8ef081df01e16e/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/41dad4abcafcae00615d4bf287c27da7/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2354ac65c67fd8735dcc02b496b1d342/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/73ae1436979d4a3d25937efa34f52856/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c37622cf8c508df639e797aed3fec93f/transformed/exoplayer-rtsp-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c37622cf8c508df639e797aed3fec93f/transformed/exoplayer-rtsp-2.17.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c37622cf8c508df639e797aed3fec93f/transformed/exoplayer-rtsp-2.17.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

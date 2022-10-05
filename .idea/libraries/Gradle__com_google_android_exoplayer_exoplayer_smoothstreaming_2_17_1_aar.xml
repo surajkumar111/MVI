@@ -1,9 +1,16 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.exoplayer:exoplayer-smoothstreaming:2.17.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/08d6d0d0eb0519e80f6fd3715a5c66ad/transformed/exoplayer-smoothstreaming-2.17.1/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/08d6d0d0eb0519e80f6fd3715a5c66ad/transformed/exoplayer-smoothstreaming-2.17.1/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/08d6d0d0eb0519e80f6fd3715a5c66ad/transformed/exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ae3003024af6e9f94a2de826e208bb6a/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/27bcd50f7812204a86aa4b1ba98b6031/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bedd838055091a8cee58fb38570482ef/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c323bcac9efc78e0b9e7ab6edcd8be94/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c4eadb369de2d67ab247a0da9496c1d3/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/8b9ed12fd548133368a4c52eb75c995a/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/bdf2c82e2e641504e7b337835c84e965/transformed/exoplayer-smoothstreaming-2.17.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bdf2c82e2e641504e7b337835c84e965/transformed/exoplayer-smoothstreaming-2.17.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bdf2c82e2e641504e7b337835c84e965/transformed/exoplayer-smoothstreaming-2.17.1/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

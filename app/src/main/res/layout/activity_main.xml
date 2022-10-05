@@ -4,21 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mvi.workmanager.MainActivity">
+    tools:context="com.example.mvi.MainActivity">
+
+    <androidx.appcompat.widget.SearchView
+      android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg"
+        app:voiceIcon="@color/black"
+        app:queryHint="Search Item"
+        app:defaultQueryHint="Search Here"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/search_recycler_view"
+        android:layout_height="340dp"
+        android:layout_margin="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.exoplayer2.ui.PlayerView
         android:id="@+id/player_View"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></com.google.android.exoplayer2.ui.PlayerView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play"
-        app:layout_constraintTop_toBottomOf="@id/player_View"></Button>
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/player_View"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,10 +22,11 @@
         android:name=".MyApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.MVI">
 
         <activity
-            android:name=".workmanager.MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MVI">
             <intent-filter>
