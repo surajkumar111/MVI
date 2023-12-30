@@ -1,1 +1,1 @@
-/Users/suraj.kumar/StudioProjects/MVI/buildSrc/build/classes/kotlin/main/com/mvi/build/Deps.class
+/Users/suraj.kumar/StudioProjects/General Compose MVI/buildSrc/build/classes/kotlin/main/com/mvi/build/Deps.class

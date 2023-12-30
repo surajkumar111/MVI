@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MVI.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MVI.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.buildSrc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.buildSrc.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MVI.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MVI.buildSrc.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/MVI.network.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/MVI.network.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/MVI.testlibrary.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/General_Project.iml" filepath="$PROJECT_DIR$/.idea/modules/General_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/General_Project.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/General_Project.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/General_Project.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/General_Project.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/General_Project.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/General_Project.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/General_Project.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/General_Project.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/General_Project.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/General_Project.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/General_Project.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/General_Project.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/General_Project.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/General_Project.buildSrc.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/General_Project.network.iml" filepath="$PROJECT_DIR$/.idea/modules/network/General_Project.network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/General_Project.network.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/General_Project.network.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/General_Project.network.main.iml" filepath="$PROJECT_DIR$/.idea/modules/network/General_Project.network.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/network/General_Project.network.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/network/General_Project.network.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.main.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/testlibrary/General_Project.testlibrary.unitTest.iml" />
     </modules>
   </component>
 </project>

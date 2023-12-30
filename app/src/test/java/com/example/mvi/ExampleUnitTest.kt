@@ -13,6 +13,7 @@ import org.junit.Assert.*
  *
  * See [testing documentation](http://d.android.com/tools/testing).
  */
+
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
@@ -20,20 +21,19 @@ class ExampleUnitTest {
     }
 
     @Test
-    fun temp() = CoroutineScope(Dispatchers.IO).launch {
-        Log.i("infoCour","get Data Begin ${Thread.currentThread().name}")
-        for(i in 1..5)
-        {
+    fun temp() { CoroutineScope(Dispatchers.IO).launch {
+        Log.i("infoCour", "get Data Begin ${Thread.currentThread().name}")
+        for (i in 1..5) {
             getData()
-            Log.i("infoCour","get Data Next${Thread.currentThread().name}")
+            Log.i("infoCour", "get Data Next${Thread.currentThread().name}")
 
         }
-        assertEquals(2,2)
-
+        assertEquals(2, 2)
 
     }
+    }
 
-    @Test
+
     fun getData(){
         Thread.sleep(3000)
         Log.i("infoCour","get Data Successfull ${Thread.currentThread().name}")
